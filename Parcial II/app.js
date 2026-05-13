@@ -96,7 +96,15 @@ class Stack {
 
   isEmpty() {
 
-    return !this.size ? true : false;
+    if(!this.size){
+
+      return true;
+
+    } else {
+      
+      return false;
+
+    }
 
   }
 
