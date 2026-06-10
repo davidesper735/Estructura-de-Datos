@@ -110,10 +110,10 @@ function evaluar(nodo, estado, caminoActivo = []) {
 const arbol = construirArbol(comportamientoNPC);
 
 const ICONOS = {
-  PATRULLAR: '🚶',
-  ATACAR: '⚔️',
-  RECARGAR: '🔄',
-  HUIR: '💨'
+  PATRULLAR: '0',
+  ATACAR: '1',
+  RECARGAR: '2',
+  HUIR: '3'
 };
 
 const LABELS = {
