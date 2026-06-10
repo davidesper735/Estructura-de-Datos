@@ -1,0 +1,41 @@
+{
+  "nodo_id": 1,
+  "tipo": "decision",
+  "variable": "distancia_jugador",
+  "operador": "<",
+  "valor": 20,
+  "hijo_verdadero": {
+    "nodo_id": 2,
+    "tipo": "decision",
+    "variable": "salud_robot",
+    "operador": ">",
+    "valor": 30,
+    "hijo_verdadero": {
+      "nodo_id": 4,
+      "tipo": "decision",
+      "variable": "municion",
+      "operador": ">",
+      "valor": 0,
+      "hijo_verdadero": {
+        "nodo_id": 6,
+        "tipo": "hoja",
+        "accion": "ATACAR"
+      },
+      "hijo_falso": {
+        "nodo_id": 7,
+        "tipo": "hoja",
+        "accion": "RECARGAR"
+      }
+    },
+    "hijo_falso": {
+      "nodo_id": 5,
+      "tipo": "hoja",
+      "accion": "HUIR"
+    }
+  },
+  "hijo_falso": {
+    "nodo_id": 3,
+    "tipo": "hoja",
+    "accion": "PATRULLAR"
+  }
+}
