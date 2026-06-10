@@ -132,11 +132,11 @@ function renderArbol(caminoActivo = []) {
   const nodos = [
   { id: 1, x: 300, y: 40,  tipo: 'decision', label1: 'distancia < 20', label2: 'Nodo 1' },
   { id: 2, x: 150, y: 150, tipo: 'decision', label1: 'salud > 30',      label2: 'Nodo 2' },
-  { id: 3, x: 480, y: 150, tipo: 'hoja',     label1: '🚶 PATRULLAR',   label2: '', accion: 'PATRULLAR' },
+  { id: 3, x: 480, y: 150, tipo: 'hoja',     label1: 'PATRULLAR',   label2: '', accion: 'PATRULLAR' },
   { id: 4, x: 60,  y: 270, tipo: 'decision', label1: 'munición > 0',   label2: 'Nodo 4' },
-  { id: 5, x: 260, y: 270, tipo: 'hoja',     label1: '💨 HUIR',        label2: '', accion: 'HUIR' },
-  { id: 6, x: -40, y: 380, tipo: 'hoja',     label1: '⚔️ ATACAR',      label2: '', accion: 'ATACAR' },
-  { id: 7, x: 160, y: 380, tipo: 'hoja',     label1: '🔄 RECARGAR',    label2: '', accion: 'RECARGAR' },
+  { id: 5, x: 260, y: 270, tipo: 'hoja',     label1: 'HUIR',        label2: '', accion: 'HUIR' },
+  { id: 6, x: -40, y: 380, tipo: 'hoja',     label1: 'ATACAR',      label2: '', accion: 'ATACAR' },
+  { id: 7, x: 160, y: 380, tipo: 'hoja',     label1: 'RECARGAR',    label2: '', accion: 'RECARGAR' },
 ];
 
   // Aristas: [desde, hacia, label]
