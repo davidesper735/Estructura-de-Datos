@@ -130,14 +130,14 @@ function renderArbol(caminoActivo = []) {
 
   // Posiciones fijas de cada nodo
   const nodos = [
-    { id: 1, x: 300, y: 40,  tipo: 'decision', label1: 'distancia < 20',  label2: 'Nodo 1' },
-    { id: 2, x: 150, y: 150, tipo: 'decision', label1: 'salud > 30',       label2: 'Nodo 2' },
-    { id: 3, x: 450, y: 150, tipo: 'hoja',     label1: '🚶 PATRULLAR',    label2: '',        accion: 'PATRULLAR' },
-    { id: 4, x: 70,  y: 260, tipo: 'decision', label1: 'munición > 0',    label2: 'Nodo 4' },
-    { id: 5, x: 230, y: 260, tipo: 'hoja',     label1: '💨 HUIR',         label2: '',        accion: 'HUIR' },
-    { id: 6, x: 20,  y: 370, tipo: 'hoja',     label1: '⚔️ ATACAR',       label2: '',        accion: 'ATACAR' },
-    { id: 7, x: 130, y: 370, tipo: 'hoja',     label1: '🔄 RECARGAR',     label2: '',        accion: 'RECARGAR' },
-  ];
+  { id: 1, x: 300, y: 40,  tipo: 'decision', label1: 'distancia < 20', label2: 'Nodo 1' },
+  { id: 2, x: 150, y: 150, tipo: 'decision', label1: 'salud > 30',      label2: 'Nodo 2' },
+  { id: 3, x: 480, y: 150, tipo: 'hoja',     label1: '🚶 PATRULLAR',   label2: '', accion: 'PATRULLAR' },
+  { id: 4, x: 60,  y: 270, tipo: 'decision', label1: 'munición > 0',   label2: 'Nodo 4' },
+  { id: 5, x: 260, y: 270, tipo: 'hoja',     label1: '💨 HUIR',        label2: '', accion: 'HUIR' },
+  { id: 6, x: -40, y: 380, tipo: 'hoja',     label1: '⚔️ ATACAR',      label2: '', accion: 'ATACAR' },
+  { id: 7, x: 160, y: 380, tipo: 'hoja',     label1: '🔄 RECARGAR',    label2: '', accion: 'RECARGAR' },
+];
 
   // Aristas: [desde, hacia, label]
   const aristas = [
@@ -149,8 +149,8 @@ function renderArbol(caminoActivo = []) {
     { desde: 4, hacia: 7, label: 'no', lado: 'der' },
   ];
 
-  const SVG_W = 600;
-  const SVG_H = 450;
+  const SVG_W = 680;
+  const SVG_H = 470;
 
   let svgContent = '';
 
@@ -199,10 +199,10 @@ function renderArbol(caminoActivo = []) {
   });
 
   document.getElementById('tree-wrap').innerHTML = `
-    <svg width="${SVG_W}" height="${SVG_H}" viewBox="0 0 ${SVG_W} ${SVG_H}">
-      ${svgContent}
-    </svg>
-  `;
+  <svg width="${SVG_W}" height="${SVG_H}" viewBox="-60 0 ${SVG_W} ${SVG_H}">
+    ${svgContent}
+  </svg>
+`;
 
 }
 
