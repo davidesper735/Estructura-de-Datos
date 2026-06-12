@@ -5,6 +5,10 @@ const { NodoDecision, NodoHoja } = require('./arbol');
 // Fase 2 — Parseo del JSON y construcción del árbol
 // ================================================
 
+// ================================================
+// Enlace: https://npc-brain.vercel.app/
+// ================================================
+
 function construirArbol(nodo) {
 
   if (nodo.tipo === 'hoja') {

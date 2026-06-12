@@ -25,5 +25,3 @@ class NodoHoja {
   }
 
 }
-
-module.exports = { NodoDecision, NodoHoja };

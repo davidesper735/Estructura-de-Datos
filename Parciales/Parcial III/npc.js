@@ -2,39 +2,16 @@
 // Fase 1 — Estructura de nodos
 // ================================================
 
-class NodoDecision {
-
-  constructor(nodo_id, variable, operador, valor) {
-
-    this.nodo_id = nodo_id;
-    this.variable = variable;
-    this.operador = operador;
-    this.valor = valor;
-    this.hijo_verdadero = null;
-    this.hijo_falso = null;
-
-  }
-
-}
-
-class NodoHoja {
-
-  constructor(nodo_id, accion) {
-
-    this.nodo_id = nodo_id;
-    this.accion = accion;
-    this.hijo_verdadero = null;
-    this.hijo_falso = null;
-
-  }
-
-}
+// ================================================
+//Enlace: https://npc-brain.vercel.app/
+// ================================================
 
 // ================================================
 // Fase 2 — Construcción del árbol desde JSON
 // ================================================
 
 const comportamientoNPC = {
+  
   "nodo_id": 1, "tipo": "decision", "variable": "distancia_jugador", "operador": "<", "valor": 20,
   "hijo_verdadero": {
     "nodo_id": 2, "tipo": "decision", "variable": "salud_robot", "operador": ">", "valor": 30,
@@ -312,3 +289,4 @@ document.getElementById('btn-random').addEventListener('click', generarAleatorio
 // --- Inicio ---
 
 actualizarArbol([]);
+module.exports = { NodoDecision, NodoHoja };
